@@ -56,6 +56,7 @@ ul{
 	font-size: 12pt;
 } 
 
+/* banner section  */
 
 .hero-grid {
     display: grid;
@@ -111,6 +112,8 @@ ul{
     padding-left: 5%;
 }
 
+/* social media links */
+
 .item-menu {
     width: 100%;
     display: flex;
@@ -157,6 +160,7 @@ img {
     transform: scale(0.5);
 }
 
+/* main body of website  */
 
 .item-main {
     width: 100vw;
@@ -265,6 +269,10 @@ input[type=submit]:hover {
 }
 
 
+/* media queries for resonsive design 
+above is formatted for smaller mobile devices (mobile first)
+below is resized for larger devices  */
+
 
 @media only screen and (min-width: 600px) {
 
@@ -274,6 +282,21 @@ input[type=submit]:hover {
         display: flex;
         flex-direction: row;
 		background-color: #0a063c7c
+    }
+
+
+    .main-nav {
+        position: sticky;
+        top: 0px;
+        height: 100vw;
+        width: 200px;
+        background-image:url(/images/nav-bar.png);
+        background-size: cover;
+        background-position: center;}
+
+
+    .item-main{
+        flex-direction: row;
     }
 	.main-item-container {
 		flex-direction: row;
@@ -373,6 +396,7 @@ ul{
 		height: 200px;
 	}
 
+   
     .item-menu {
         height: 150px;
         display: flex;
